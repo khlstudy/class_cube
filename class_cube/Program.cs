@@ -33,10 +33,8 @@ namespace class_cube
         }
         public class Cube
         {
-            double a;
-            
-            public Cube()
-            { }
+            private double a; //Закрите поле класу - ребро куба
+
 
             public Cube(double x)
             { a = x; }
@@ -58,9 +56,7 @@ namespace class_cube
 
             public bool Correct() //перевіряє, чи може існувати такий об'єкт
             {
-                bool c = false;
-                if (a > 0) { c = true; }
-                return c;
+                return a > 0;
             }
         }
     }
